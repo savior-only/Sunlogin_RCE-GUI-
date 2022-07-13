@@ -70,11 +70,4 @@ class Decrypt(Base):
     def get_result(self) -> bytes:
         return self._get_handle().mem_read(self.__save_ptr, len(self.__encoded_data))
 
-# def pppwd(encry_pwd,sunlogincode):
-#     # encry_pwd = encry_pwd
-#     # sunlogincode = sunlogincode
-#     ppwd = Decrypt(base64.b64decode(encry_pwd),
-#                 Init(KeyBlock.new_block(sunlogincode)).start()).start().decode()
-
-
 
